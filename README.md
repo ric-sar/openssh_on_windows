@@ -1,4 +1,4 @@
-# :fire: Fast OpenSSH setup on Windows :fire:
+# :fire: Fast OpenSSH Setup on Windows :fire:
 OpenSSH is the open-source version of the Secure Shell (SSH), designed to provide a secure and straightforward approach to remote system administration.
 
 # Prerequisites
