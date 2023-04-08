@@ -51,7 +51,7 @@ if (!(Get-NetFirewallRule -Name "OpenSSH-Server-In-TCP" -ErrorAction SilentlyCon
 ```
 
 ## Key-based authentication
-Enstabilish an SSH connection on Windows by typing the command ```ssh``` followed by the Username and the server's IP address:
+Estabilish an SSH connection on Windows by typing the command ```ssh``` followed by the Username and the server's IP address:
 ```
 ssh Username@IP
 ```
