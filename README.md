@@ -125,7 +125,7 @@ Remove-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
 Remove-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ```
-Remember to restart PC and/or Server and to delete the related SSH folders.
+Remember to restart the client and/or server and to delete the related SSH folders.
 
 ---
 
