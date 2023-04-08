@@ -68,7 +68,7 @@ During the generation of keys, will be prompted to use a passphrase or not. It i
 With this command you created a pair of ```Ed25519``` keys: ```id_ed25519``` which is your **private key** and ```id_ed25519.pub``` which is your **public key**. Both will be saved in ```C:\Users\Username\.ssh``` for Standard user or in ```C:\ProgramData\ssh``` for Administrator User.
 
 ### Add the key to ssh-agent
-Taking into consideration that your **private key** is stored in an User folder it must be stored securely. OpenSSH provides the so called ssh-agent which allows to use the private key related to your client without pointing to the private key path:
+Taking into consideration that your **private key** is stored in a User folder it must be stored securely. OpenSSH provides the so called ssh-agent which allows to use the private key related to your client without pointing to the private key path:
 ```
 Get-Service ssh-agent | Set-Service -StartupType Automatic
 Start-Service ssh-agent
