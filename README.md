@@ -77,6 +77,11 @@ ssh-add $env:USERPROFILE\.ssh\id_ed25519
 ```
 Now, your private key can be moved to secure store instead of being left inside the User folder.
 
+## Enable Public key authentication on Windows
+By default Public key authentication on Windows is disabled, you need to make a change to the configuration file ```sshd_config``` located in ```C:\ProgramData\ssh\sshd_config```.
+Open ```sshd_config``` with your favorite note editor and make the following change:
+* ```PubkeyAuthentication yes``` this will enable the Public key authentication
+
 ## Move the public key to the server
 From PowerShell you can move the public key from the client to the server, the destination changes if the public key has to be applied to Standard or Administrator account:
 * Standard user
