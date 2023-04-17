@@ -103,8 +103,13 @@ ssh Username@IP $remotePowershell
 ```
 
 **Alternatively** use ```scp``` command to move the public key from the client to the server:
+* Standard user
 ```
 scp C:\Users\Username\.ssh\id_ed25519.pub Username@IP:C:\Users\Username\.ssh\authorized_keys
+```
+* Administrator user
+```
+scp C:\Users\Username\.ssh\id_ed25519.pub Username@IP:C:\ProgramData\ssh\administrators_authorized_keys
 ```
 **Note**: Remember to change the source path of the public key, Username and server's IP address.
 
