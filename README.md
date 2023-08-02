@@ -1,4 +1,9 @@
-# Table of contents:
+# :fire: Fast OpenSSH Setup on Windows :fire:
+OpenSSH is the open-source version of the Secure Shell (SSH), designed to provide a secure and straightforward approach to remote system administration.
+
+---
+
+**Table of contents**
 - [Prerequisites](#prerequisites)
 - [Install OpenSSH](#install-openssh)
   * [Automatic startup and firewall rules](#automatic-startup-and-firewall-rules)
@@ -10,8 +15,7 @@
 - [Uninstall OpenSSH](#uninstall-openssh)
 - [List keys stored in ssh-agent](#list-keys-stored-in-ssh-agent)
 
-# :fire: Fast OpenSSH Setup on Windows :fire:
-OpenSSH is the open-source version of the Secure Shell (SSH), designed to provide a secure and straightforward approach to remote system administration.
+---
 
 # Prerequisites
 To install OpenSSH on Windows check these minimum requirements by running PowerShell:
