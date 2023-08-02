@@ -1,3 +1,15 @@
+# Table of contents:
+- [Prerequisites](#prerequisites)
+- [Install OpenSSH](#install-openssh)
+  * [Automatic startup and firewall rules](#automatic-startup-and-firewall-rules)
+  * [Key-based authentication](#key-based-authentication)
+    + [Add the key to ssh-agent](#add-the-key-to-ssh-agent)
+  * [Enable Public key authentication on Windows](#enable-public-key-authentication-on-windows)
+  * [Move the public key to the server](#move-the-public-key-to-the-server)
+- [Securing Remote Desktop with the SSH Tunnel](#securing-remote-desktop-with-the-ssh-tunnel)
+- [Uninstall OpenSSH](#uninstall-openssh)
+- [List keys stored in ssh-agent](#list-keys-stored-in-ssh-agent)
+
 # :fire: Fast OpenSSH Setup on Windows :fire:
 OpenSSH is the open-source version of the Secure Shell (SSH), designed to provide a secure and straightforward approach to remote system administration.
 
@@ -136,6 +148,13 @@ Remove-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 Remove-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ```
 Remember to restart the client and/or server and to delete the related SSH folders.
+
+# List keys stored in ssh-agent
+To list all the keys stored in ssh-agent use this command:
+```
+ssh-add -L
+```
+Algorithms, public keys and related users will be shown as output.
 
 ---
 
