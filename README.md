@@ -139,7 +139,10 @@ or if the private key has not been set in ssh-agent just specify the source path
 ssh -L 8888:IP:3389 Username@IP -i "C:\Users\Username\.ssh\id_ed25519"
 ```
 
+**On Microsoft Windows, Remote Desktop should be enable to work. To enable RDP go to Start > Settings  > System > Remote Desktop, and turn on Enable Remote Desktop.**
+
 Now, open Microsoft Remote Desktop and use ```127.0.0.1:8888``` to connect to RDP, the password for access to the account will be prompted.
+
 
 # Uninstall OpenSSH
 To uninstall OpenSSH Client and/or Server just run these commands in PowerShell:
@@ -166,3 +169,4 @@ Algorithms, public keys and related users will be shown as output.
 * [OpenSSH for Windows overview by Microsoft](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_overview)
 * [Configuring SSH Public Key Authentication on Windows by Windows OS Hub](https://woshub.com/using-ssh-key-based-authentication-on-windows/)
 * [Configure SSH Tunnel (Port Forwarding) on Windows by Windows OS Hub](https://woshub.com/ssh-tunnel-port-forward-windows/)
+* [How to use Remote Desktop](https://support.microsoft.com/en-us/windows/how-to-use-remote-desktop-5fe128d5-8fb1-7a23-3b8a-41e636865e8c)
